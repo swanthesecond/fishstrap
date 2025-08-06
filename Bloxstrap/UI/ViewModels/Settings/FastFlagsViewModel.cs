@@ -97,6 +97,23 @@ namespace Bloxstrap.UI.ViewModels.Settings
             }
         }
 
+        public LightingMode SelectedLightingMode
+        {
+            get => App.FastFlags.GetPresetEnum(LightingModes, "Rendering.Lighting", "True");
+            set
+            {
+                LightingMode[] DisableUnified = new LightingMode[]
+                {
+                    LightingMode.Voxel,
+                    LightingMode.ShadowMap,
+                    LightingMode.Future
+                };
+
+                App.FastFlags.SetPresetEnum("Rendering.Lighting", value.ToString(), "True");
+                App.FastFlags.SetPreset("Rendering.Lighting.Unified", DisableUnified.Contains(value) ? "False" : null);
+            }
+        }
+
         public IReadOnlyDictionary<string, string?>? GPUs
         {
             get => GetGPUs();
@@ -156,12 +173,6 @@ namespace Bloxstrap.UI.ViewModels.Settings
         //}
 
         public IReadOnlyDictionary<LightingMode, string> LightingModes => FastFlagManager.LightingModes;
-
-        public LightingMode SelectedLightingMode
-        {
-            get => App.FastFlags.GetPresetEnum(LightingModes, "Rendering.Lighting", "True");
-            set => App.FastFlags.SetPresetEnum("Rendering.Lighting", LightingModes[value], "True");
-        }
 
         public bool FullscreenTitlebarDisabled
         {
