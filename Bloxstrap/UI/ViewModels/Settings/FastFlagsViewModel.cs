@@ -110,7 +110,8 @@ namespace Bloxstrap.UI.ViewModels.Settings
                 };
 
                 App.FastFlags.SetPresetEnum("Rendering.Lighting", value.ToString(), "True");
-                App.FastFlags.SetPreset("Rendering.Lighting.Unified", DisableUnified.Contains(value) ? "False" : null);
+                App.FastFlags.SetPreset("Rendering.Lighting.Unified16", DisableUnified.Contains(value) ? "False" : null);
+                App.FastFlags.SetPreset("Rendering.Lighting.UnifiedNew", DisableUnified.Contains(value) ? "False" : null);
             }
         }
 
