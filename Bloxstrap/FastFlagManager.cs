@@ -87,6 +87,12 @@ namespace Bloxstrap
             { "UI.Menu.Style.EnableV4Chrome", "FFlagEnableInGameMenuChrome" },
             { "UI.Menu.Style.ReportButtonCutOff", "FFlagFixReportButtonCutOff" },
 
+            // Chrome ui
+            { "UI.Menu.ChromeUI", "FFlagEnableInGameMenuChromeABTest4" },
+            { "UI.Menu.ChromeUI2", "FFlagEnableInGameMenuSongbirdABTest" },
+            { "UI.Menu.ChromeUI3", "FFlagEnableInGameMenuChrome" },
+            // how the fuck does this actually work
+
             // Menu stuff
             { "Menu.VRToggles", "FFlagAlwaysShowVRToggleV3" },
             { "Menu.Feedback", "FFlagDisableFeedbackSoothsayerCheck" },
