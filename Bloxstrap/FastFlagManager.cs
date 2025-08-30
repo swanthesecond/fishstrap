@@ -99,7 +99,8 @@ namespace Bloxstrap
             { "Menu.LanguageSelector", "FIntV1MenuLanguageSelectionFeaturePerMillageRollout" },
             { "Menu.Haptics", "FFlagAddHapticsToggle" },
             { "Menu.Framerate", "FFlagGameBasicSettingsFramerateCap5"},
-            { "Menu.ChatTranslation", "FFlagChatTranslationSettingEnabled3" }
+            { "Menu.ChatTranslation", "FFlagChatTranslationSettingEnabled3" },
+            { "Menu.LuaExplorer", "FFlagKillOldExplorer3" },
 
 
             //{ "UI.Menu.Style.ABTest.1", "FFlagEnableMenuControlsABTest" },

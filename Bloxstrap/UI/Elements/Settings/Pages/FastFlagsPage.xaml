@@ -256,7 +256,28 @@
                     <ui:ToggleSwitch IsChecked="{Binding PingBreakdown, Mode=TwoWay}" />
                 </controls:OptionControl>
             </StackPanel>
-    </ui:CardExpander>
+        </ui:CardExpander>
+
+        <ui:CardExpander Grid.Row="1" Margin="0,8,0,0" IsExpanded="False">
+            <ui:CardExpander.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock FontSize="14" Text="Studio Flags" />
+                    </StackPanel>
+                </Grid>
+            </ui:CardExpander.Header>
+
+            <StackPanel>
+                <controls:OptionControl 
+    Header="New Lua Explorer">
+                    <ui:ToggleSwitch IsChecked="{Binding LuaExplorer, Mode=TwoWay}" />
+                </controls:OptionControl>
+            </StackPanel>
+        </ui:CardExpander>
 
         <!--<ui:CardExpander Grid.Row="1" Margin="0,8,0,0" IsExpanded="False">
         <ui:CardExpander.Header>

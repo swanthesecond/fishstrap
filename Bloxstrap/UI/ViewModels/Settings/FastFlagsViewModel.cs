@@ -252,6 +252,12 @@ namespace Bloxstrap.UI.ViewModels.Settings
             set => App.FastFlags.SetPreset("Menu.VRToggles", value);
         }
 
+        public bool LuaExplorer
+        {
+            get => App.FastFlags.GetPreset("Menu.LuaExplorer") != "False";
+            set => App.FastFlags.SetPreset("Menu.LuaExplorer", value);
+        }
+
         public bool SoothsayerCheck
         {
             get => App.FastFlags.GetPreset("Menu.Feedback") != "False";
