@@ -4690,11 +4690,19 @@ namespace Bloxstrap.Resources {
             }
         }
         
+        public static string Menu_SaveAndLaunchStudio {
+            get {
+                return ResourceManager.GetString("Menu.SaveAndLaunchStudio", resourceCulture);
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to Changes will take effect the next time you launch Roblox..
         /// </summary>
-        public static string Menu_SettingsSaved_Message {
-            get {
+        public static string Menu_SettingsSaved_Message
+        {
+            get
+            {
                 return ResourceManager.GetString("Menu.SettingsSaved.Message", resourceCulture);
             }
         }

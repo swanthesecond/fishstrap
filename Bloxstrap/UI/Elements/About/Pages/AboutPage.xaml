@@ -116,6 +116,7 @@
                     <controls:MarkdownTextBlock MarkdownText="[ZFkQSZ3GxWFy6bthZ](https://github.com/ZFkQSZ3GxWFy6bthZ)" />
                     <controls:MarkdownTextBlock MarkdownText="[BlueOutside](https://github.com/BlueOutside)" />
                     <controls:MarkdownTextBlock MarkdownText="[MikeyUsersREC](https://github.com/MikeyUsersREC)" />
+                    <controls:MarkdownTextBlock MarkdownText="[RealMeddsam](https://github.com/RealMeddsam/)" />
                 </StackPanel>
             </controls:Expander>
 

@@ -8,11 +8,12 @@ namespace Bloxstrap.UI.ViewModels.Settings
     public class MainWindowViewModel : NotifyPropertyChangedViewModel
     {
         public ICommand OpenAboutCommand => new RelayCommand(OpenAbout);
-        
+
         public ICommand SaveSettingsCommand => new RelayCommand(SaveSettings);
 
         public ICommand SaveAndLaunchSettingsCommand => new RelayCommand(SaveAndLaunchSettings);
 
+        public ICommand SaveAndLaunchStudioSettingsCommand => new RelayCommand(SaveAndLaunchStudioSettings);
 
         public ICommand CloseWindowCommand => new RelayCommand(CloseWindow);
 
@@ -37,6 +38,12 @@ namespace Bloxstrap.UI.ViewModels.Settings
 
                 App.LaunchSettings.TestModeFlag.Active = value;
             }
+        }
+
+        public bool IsSidebarExpanded
+        {
+            get => App.Settings.Prop.IsNavigationSidebarExpanded;
+            set => App.Settings.Prop.IsNavigationSidebarExpanded = value;
         }
 
         private void OpenAbout() => new MainWindow().ShowDialog();
@@ -71,6 +78,15 @@ namespace Bloxstrap.UI.ViewModels.Settings
             SaveSettings();
             if (!App.LaunchSettings.TestModeFlag.Active) // test mode already launches an instance
                 LaunchHandler.LaunchRoblox(LaunchMode.Player);
+
+            CloseWindow();
+        }
+        
+        public void SaveAndLaunchStudioSettings()
+        {
+            SaveSettings();
+            if (!App.LaunchSettings.TestModeFlag.Active) // test mode already launches an instance
+                LaunchHandler.LaunchRoblox(LaunchMode.Studio);
 
             CloseWindow();
         }

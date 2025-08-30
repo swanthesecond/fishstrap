@@ -24,6 +24,7 @@ namespace Bloxstrap.Models.Persistable
         public string Channel { get; set; } = RobloxInterfaces.Deployment.DefaultChannel;
         public ChannelChangeMode ChannelChangeMode { get; set; } = ChannelChangeMode.Automatic;
         public string ChannelHash { get; set; } = "";
+        public bool IsNavigationSidebarExpanded { get; set; } = false;
         public string DownloadingStringFormat { get; set; } = Strings.Bootstrapper_Status_Downloading + " {0} - {1}MB / {2}MB";
         public string? SelectedCustomTheme { get; set; } = null;
         public bool BackgroundUpdatesEnabled { get; set; } = false;

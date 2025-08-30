@@ -1412,6 +1412,9 @@ Please close any applications that may be using Roblox's files, and relaunch.</v
   <data name="Menu.SaveAndLaunch" xml:space="preserve">
     <value>Save and Launch</value>
   </data>
+  <data name="Menu.SaveAndLaunchStudio" xml:space="preserve">
+    <value>Save and Launch Studio</value>
+  </data>
   <data name="Menu.FastFlags.Presets.PingBreakdown.Title" xml:space="preserve">
     <value>Ping breakdown</value>
   </data>
