@@ -354,7 +354,7 @@ If not, then please report this exception through a [GitHub issue]({1}) along wi
     <value>2023 (V4)</value>
   </data>
   <data name="Enums.FlagPresets.LightingMode.Default" xml:space="preserve">
-    <value>Chosen by game</value>
+    <value>Unified (Default)</value>
   </data>
   <data name="Enums.FlagPresets.LightingMode.Future" xml:space="preserve">
     <value>Future (Phase 3)</value>
